@@ -26,3 +26,31 @@ function validarFornecedor(){
         }
     });
 }
+function validanome(){
+    document.getElementById("nome").addEventListener('input', function(){
+        this.value = this.value.replace(/[0-9]/g, '');
+    });
+}
+function validacontato(){
+    document.getElementById("contato").addEventListener('input', function(){
+        this.value = this.value.replace(/[0-9]/g, '');
+    });
+}
+
+function mascaratelefone(input){
+    let valor = input.value.replace(/\D/g, '');
+
+    if (valor.length <= 10) {
+
+        input.value = valor.replace(/(\d{2})(\d{4})(\d{0,4})/, '($1) $2-$3');
+    } else {
+        input.value = valor.replace(/(\d{2})(\d{5})(\d{0,4})/, '($1) $2-$3');
+    }
+    const InputTelefone = document.getElementById('telefone');
+    
+    if (InputTelefone) {
+        InputTelefone.addEventListener('input', function() {
+            mascaratelefone(this);
+        });
+    }
+}
