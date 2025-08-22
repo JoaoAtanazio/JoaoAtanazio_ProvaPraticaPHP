@@ -79,5 +79,9 @@ $usuarios = $stmt->fetchALL(PDO::FETCH_ASSOC);
     <?php endif;?>
     
     <a href="principal.php" class="btn-voltar"> VOLTAR</a>
+    <center>
+                <br>
+            <tag>João Vitor Atanazio | Estudante técnico | Desenvolvimento de Sistemas</tag>
+    </center>
 </body>
 </html>

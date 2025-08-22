@@ -87,5 +87,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <?php endif;?>
             <a href="principal.php" class="btn-voltar">Voltar</a>
             <script src="validacoes.js"></script>
+            <center>
+                <br>
+            <tag>João Vitor Atanazio | Estudante técnico | Desenvolvimento de Sistemas</tag>
+    </center>
 </body>
 </html>

@@ -72,5 +72,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         }
 
     </script>
+    <center>
+                <br>
+            <tag>João Vitor Atanazio | Estudante técnico | Desenvolvimento de Sistemas</tag>
+    </center>
 </body>
 </html>

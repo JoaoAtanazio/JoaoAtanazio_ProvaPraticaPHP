@@ -81,5 +81,9 @@ $opcoes_menu = $permissoes [$id_perfil];
           <?php endforeach;?>
         </ul>
     </nav>
+    <center>
+                <br>
+            <tag>João Vitor Atanazio | Estudante técnico | Desenvolvimento de Sistemas</tag>
+    </center>
 </body>
 </html>
