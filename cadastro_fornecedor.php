@@ -42,19 +42,19 @@ if ($_SERVER['REQUEST_METHOD']=="POST"){
     <h2>Cadastrar Fornecedor</h2>
     <form action="cadastro_fornecedor.php" method="POST" id="formCadastro">
         <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required>
+        <input type="text" id="nome" name="nome" onkeypress="validanome()" required>
 
         <label for="endereco">Endereço:</label>
         <input type="text" id="endereco" name="endereco" required>
 
         <label for="telefone">Telefone:</label>
-        <input type="number" id="telefone" name="telefone" required>
+        <input type="tel" id="telefone" name="telefone" oninput ="mascaratelefone(this)" maxlength="15" required>
         
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>
 
         <label for="contato">Contato:</label>
-        <input type="text" id="contato" name="contato" required>
+        <input type="text" id="contato" onkeypress="validacontato()"  name="contato" required>
         
         <button type="submit" onclick="validarFornecedor()">Salvar</button>
         <button type="reset">Cancelar</button>
