@@ -146,10 +146,7 @@ label {
 }
 
 /* Ajusta os campos de entrada */
-input[type="text"],
-input[type="email"],
-input[type="password"], 
-input[type="number"] {
+input{
     width: 80%; /* Ocupa toda a largura do formulário */
     padding: 8px;
     margin-bottom: 10px;
